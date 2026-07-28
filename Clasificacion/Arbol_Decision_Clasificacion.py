@@ -995,6 +995,3 @@ print("✅ Visualización completada")
 # MAGIC ---
 # MAGIC
 # MAGIC **¡Felicitaciones!** Has completado un pipeline end-to-end de Machine Learning para clasificación. 🎉
-
-# COMMAND ----------
-
