@@ -21,7 +21,7 @@ ML/
 │   │   ├── Teoria_Random_Forest.ipynb          [TEORIA]
 │   │   ├── Arbol_Decision_Clasificacion.ipynb  [PRACTICA]
 │   │   ├── Random_Forest_Clasificacion.ipynb   [PRACTICA]
-│   │   └── README.md
+│   │   └── GUIA_CLASIFICACION.md
 │   │
 │   ├── Regresion/
 │   │   ├── Teoria_Regresion.ipynb              [TEORIA]
@@ -64,7 +64,7 @@ ML/
   - **Regresión**: Predicción de precios inmobiliarios, demanda
 * **Algoritmos**: Decision Trees, Random Forest, Linear Regression, Gradient Boosting
 
-📊 **Total**: 4 notebooks teóricos + 6 notebooks prácticos = **10 notebooks**
+📊 **Total**: 4 notebooks teóricos + 6 notebooks prácticos
 
 ---
 
