@@ -4,7 +4,7 @@
 
 ## 📚 Contenido
 
-Este repositorio contiene **15 notebooks completos** divididos en **teoría** y **práctica**, cubriendo los tres tipos principales de Machine Learning: **Supervisado**, **No Supervisado** y **Por Refuerzo**.
+Este repositorio contiene **21 notebooks completos** divididos en **teoría** y **práctica**, cubriendo desde fundamentos hasta producción con MLOps: **Fundamentos**, **Supervisado**, **No Supervisado**, **Por Refuerzo** y **AutoML/MLOps**.
 
 ### 📂 Estructura del Proyecto
 
@@ -64,7 +64,7 @@ ML/
   - **Regresión**: Predicción de precios inmobiliarios, demanda
 * **Algoritmos**: Decision Trees, Random Forest, Linear Regression, Gradient Boosting
 
-📊 **Total**: 4 notebooks teóricos + 6 notebooks prácticos
+📊 **Total**: 4 notebooks teóricos + 6 notebooks prácticos = **10 notebooks**
 
 ---
 
@@ -104,7 +104,9 @@ ML/
 
 ## 📖 Notebooks Teóricos (Resumen)
 
-### 0️⃣ Fundamentos
+### 0️⃣ Fundamentos (4 notebooks)
+
+Base matemática y metodológica esencial antes de algoritmos específicos.
 
 **01_Introduccion_Machine_Learning.ipynb** (7 celdas, 425 líneas)
 - Tipos de aprendizaje (supervisado, no supervisado, refuerzo)
@@ -288,11 +290,11 @@ Aprende a usar **Databricks AutoML** para generar modelos automáticamente e imp
 
 | Categoría | Cantidad | Líneas |
 |-----------|----------|--------|
-| **Notebooks teóricos** | 8 | ~4,735 |
-| **Notebooks prácticos** | 7 | ~1,500 |
-| **Total notebooks** | 15 | ~6,235 |
-| **README files** | 7 | ~1,200 |
-| **Total líneas** | - | **~7,435** |
+| **Notebooks teóricos** | 11 | ~6,700 |
+| **Notebooks prácticos** | 10 | ~3,500 |
+| **Total notebooks** | 21 | ~10,200 |
+| **README files** | 8 | ~1,500 |
+| **Total líneas** | - | **~11,700** |
 
 ### Distribución por Paradigma
 
