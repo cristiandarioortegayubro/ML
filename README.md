@@ -61,16 +61,7 @@ ML/
 3. Completa el formulario y verifica tu email
 4. Inicia sesión
 
-### Paso 2: Crear un Cluster
-
-1. Menú lateral → **"Compute"**
-2. **"Create Cluster"**
-3. Configuración:
-   - **Cluster Name**: "ML-Cluster"
-   - **Databricks Runtime**: Selecciona versión con ML (ej: "Runtime 14.3 LTS ML")
-4. **"Create Cluster"** y espera 3-5 minutos
-
-### Paso 3: Clonar este repositorio
+### Paso 2: Clonar este repositorio
 
 **Opción A: Usando Git (Recomendado)**
 
@@ -143,7 +134,6 @@ Databricks usa formato Source (.py) pero se editan como notebooks interactivos. 
 
 - [ ] Creé cuenta en Databricks
 - [ ] Cloné el repositorio
-- [ ] Inicié mi cluster
 - [ ] Ejecuté notebook de Clasificación
 - [ ] Ejecuté notebooks de Regresión
 - [ ] Ejecuté notebook de Clustering
