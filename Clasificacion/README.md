@@ -8,7 +8,7 @@ Esta carpeta contiene notebooks **teóricos y prácticos** de **Machine Learning
 
 #### 📖 Teoría
 
-**Teoria_Arboles_Decision.ipynb** (7 celdas, 311 líneas)
+**1. Teoria_Arboles_Decision.ipynb** (7 celdas, 311 líneas)
 - **Estructura de árboles**: Nodos, ramas, hojas, definición formal
 - **Algoritmo ID3**: Pseudocódigo y proceso de construcción
 - **Entropía y Ganancia de Información**: Fórmulas, propiedades, selección de atributos
@@ -17,6 +17,15 @@ Esta carpeta contiene notebooks **teóricos y prácticos** de **Machine Learning
 - **Ventajas y Desventajas**: Interpretabilidad, inestabilidad, fronteras de decisión
 - **Conclusiones**: Conceptos clave y próximos pasos
 
+**2. Teoria_Random_Forest.ipynb** (7 celdas, ~400 líneas)
+- **Ensemble Learning**: Concepto de bosques aleatorios, historia
+- **Algoritmo**: Pseudocódigo, bagging, feature randomness, agregación
+- **Ventajas y Desventajas**: Comparación con árboles individuales
+- **Hiperparámetros**: numTrees, featureSubsetStrategy, maxDepth
+- **Feature Importance**: Cálculo e interpretación
+- **Out-Of-Bag (OOB) Error**: Validación implícita
+- **Fórmulas clave**: $m = \sqrt{p}$, predicción por voto mayoritario
+
 **Fórmulas clave:**
 - Entropía: $H(S) = -\sum_{i=1}^{c} p_i \log_2(p_i)$
 - Ganancia de Información: $IG(S, A) = H(S) - \sum_{v} \frac{|S_v|}{|S|} H(S_v)$
@@ -24,13 +33,21 @@ Esta carpeta contiene notebooks **teóricos y prácticos** de **Machine Learning
 
 #### 💻 Práctica
 
-**Arbol_Decision_Clasificacion.ipynb**
+**1. Arbol_Decision_Clasificacion.ipynb**
 - **Algoritmo**: Decision Tree Classifier
 - **Problema**: Predicción de churn (abandono de clientes)
 - **Dataset**: 10,000 clientes de telecomunicaciones (sintético)
 - **Variables**: Antigüedad, gasto mensual, tipo contrato, llamadas soporte, etc.
 - **Métricas**: Accuracy, Precision, Recall, F1-Score, AUC-ROC
 - **Caso de uso**: Identificar clientes en riesgo de abandono para campañas de retención
+
+**2. Random_Forest_Clasificacion.ipynb**
+- **Algoritmo**: Random Forest Classifier (100 árboles)
+- **Problema**: Mismo dataset de churn
+- **Comparación**: vs Decision Tree (mejora en todas las métricas)
+- **Feature Importance**: Identificación de variables más relevantes
+- **Resultados**: ~92% accuracy vs ~88% de Decision Tree
+- **Trade-off**: Mayor accuracy a cambio de velocidad e interpretabilidad
 
 ## 🎯 Objetivo
 
@@ -53,15 +70,25 @@ Aprender a construir modelos de clasificación binaria que predicen una **catego
 
 ## 🚀 Orden de Estudio Recomendado
 
-1. **Primero**: Lee el notebook teórico `Teoria_Arboles_Decision`
+1. **Primero**: Lee `Teoria_Arboles_Decision`
    - Comprende cómo funcionan los árboles de decisión
    - Estudia las fórmulas de entropía y Gini
    - Aprende sobre poda y overfitting
 
-2. **Segundo**: Ejecuta el notebook práctico `Arbol_Decision_Clasificacion`
+2. **Segundo**: Ejecuta `Arbol_Decision_Clasificacion`
    - Aplica lo aprendido en un problema real
    - Observa cómo se calculan las métricas
    - Experimenta con diferentes hiperparámetros
+
+3. **Tercero**: Lee `Teoria_Random_Forest`
+   - Comprende ensemble learning y bagging
+   - Estudia cómo se combinan múltiples árboles
+   - Aprende sobre feature importance y OOB error
+
+4. **Cuarto**: Ejecuta `Random_Forest_Clasificacion`
+   - Compara Random Forest vs Decision Tree
+   - Analiza feature importance
+   - Observa la mejora en accuracy y robustez
 
 ## 💡 Cómo usar estos notebooks
 

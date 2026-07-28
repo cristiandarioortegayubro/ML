@@ -41,6 +41,14 @@ Esta carpeta contiene notebooks **teóricos y prácticos** de **Machine Learning
 - **Ventaja**: Máxima interpretabilidad (coeficientes directos)
 - **Comparación**: vs Decision Tree para evaluar cuál funciona mejor
 
+**3. Random_Forest_Regresion.ipynb**
+- **Algoritmo**: Random Forest Regressor (100 árboles)
+- **Problema**: Mismo dataset de propiedades
+- **Comparación**: vs Decision Tree y Linear Regression
+- **Feature Importance**: Identificación de variables más relevantes
+- **Resultados**: R² ≈ 0.95-0.97 (mejor que Decision Tree y Linear Regression)
+- **Trade-off**: Mayor accuracy a cambio de velocidad e interpretabilidad
+
 ## 🎯 Objetivo
 
 Aprender a construir modelos de regresión que predicen valores **numéricos continuos** (precio, temperatura, ventas, etc.).
@@ -71,14 +79,26 @@ Aprender a construir modelos de regresión que predicen valores **numéricos con
 
 ## 🚀 Orden de Estudio Recomendado
 
-1. **Primero**: Lee el notebook teórico `Teoria_Regresion`
+1. **Primero**: Lee `Teoria_Regresion`
    - Comprende la regresión lineal simple y múltiple
    - Estudia las fórmulas de mínimos cuadrados
    - Aprende sobre regularización (Ridge, Lasso)
+   - Revisa métodos no lineales (incluye Random Forest)
 
-2. **Segundo**: Ejecuta ambos notebooks prácticos
-   - Compara Regresión Lineal vs Árbol de Decisión
-   - Observa las diferencias en interpretabilidad y performance
+2. **Segundo**: Ejecuta `Regresion_Lineal_Multiple`
+   - Implementa regresión lineal con múltiples variables
+   - Observa la interpretabilidad de los coeficientes
+   - Evalúa las métricas (RMSE, MAE, R²)
+
+3. **Tercero**: Ejecuta `Arbol_Decision_Regresion`
+   - Compara con regresión lineal
+   - Observa cómo captura relaciones no lineales
+   - Analiza feature importance
+
+4. **Cuarto**: Ejecuta `Random_Forest_Regresion`
+   - Compara los 3 modelos (Linear, Tree, Random Forest)
+   - Observa la mejora en R² y reducción de RMSE
+   - Analiza feature importance más robusta
    - Decide cuál es mejor para este problema
 
 ## 💡 Cómo usar estos notebooks
