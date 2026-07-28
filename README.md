@@ -1,10 +1,10 @@
 # Machine Learning con PySpark en Databricks
 
-🎓 **Repositorio educativo** con notebooks teóricos y prácticos de Machine Learning usando PySpark ML en Databricks.
+🎓 **Repositorio educativo** con notebooks teóricos y prácticos de Machine Learning usando PySpark ML en Databricks, organizado según los **tres paradigmas fundamentales** de ML.
 
 ## 📚 Contenido
 
-Este repositorio contiene **9 notebooks completos** divididos en **teoría** y **práctica**, cubriendo fundamentos y los tres tipos principales de Machine Learning.
+Este repositorio contiene **15 notebooks completos** divididos en **teoría** y **práctica**, cubriendo los tres tipos principales de Machine Learning: **Supervisado**, **No Supervisado** y **Por Refuerzo**.
 
 ### 📂 Estructura del Proyecto
 
@@ -14,170 +14,333 @@ ML/
 │   ├── 01_Introduccion_Machine_Learning.ipynb  [TEORIA]
 │   ├── 02_Matematicas_Esenciales.ipynb         [TEORIA]
 │   └── README.md
-├── Clasificacion/
-│   ├── Teoria_Arboles_Decision.ipynb           [TEORIA]
-│   ├── Arbol_Decision_Clasificacion.ipynb      [PRACTICA]
+│
+├── Aprendizaje Supervisado/
+│   ├── Clasificacion/
+│   │   ├── Teoria_Arboles_Decision.ipynb       [TEORIA]
+│   │   ├── Teoria_Random_Forest.ipynb          [TEORIA]
+│   │   ├── Arbol_Decision_Clasificacion.ipynb  [PRACTICA]
+│   │   ├── Random_Forest_Clasificacion.ipynb   [PRACTICA]
+│   │   └── README.md
+│   │
+│   ├── Regresion/
+│   │   ├── Teoria_Regresion.ipynb              [TEORIA]
+│   │   ├── Regresion_Lineal_Multiple.ipynb     [PRACTICA]
+│   │   ├── Arbol_Decision_Regresion.ipynb      [PRACTICA]
+│   │   ├── Random_Forest_Regresion.ipynb       [PRACTICA]
+│   │   └── README.md
+│   │
 │   └── README.md
-├── Regresion/
-│   ├── Teoria_Regresion.ipynb                  [TEORIA]
-│   ├── Arbol_Decision_Regresion.ipynb          [PRACTICA]
-│   ├── Regresion_Lineal_Multiple.ipynb         [PRACTICA]
+│
+├── Aprendizaje No Supervisado/
+│   ├── Clustering/
+│   │   ├── Teoria_Clustering.ipynb             [TEORIA]
+│   │   ├── KMeans_Clustering.ipynb             [PRACTICA]
+│   │   └── README.md
+│   │
 │   └── README.md
-├── Clustering/
-│   ├── Teoria_Clustering.ipynb                 [TEORIA]
-│   ├── KMeans_Clustering.ipynb                 [PRACTICA]
+│
+├── Aprendizaje por Refuerzo/
+│   ├── Teoria_Reinforcement_Learning.ipynb     [TEORIA]
+│   ├── Q_Learning_GridWorld.ipynb              [PRACTICA]
 │   └── README.md
+│
 └── README.md (este archivo)
 ```
 
-### 📖 Notebooks Teóricos (1,935 líneas de contenido académico)
+---
 
-#### 0️⃣ Fundamentos
+## 🎯 Tres Paradigmas de Machine Learning
+
+### 1️⃣ Aprendizaje Supervisado (`Aprendizaje Supervisado/`)
+
+**Definición**: Aprender de datos **etiquetados** para predecir respuestas correctas.
+
+* **Carpetas**: `Clasificacion/` y `Regresion/`
+* **Datos**: Pares (entrada, salida deseada)
+* **Objetivo**: Predecir etiqueta o valor numérico
+* **Ejemplos**:
+  - **Clasificación**: Predicción de churn (Sí/No), detección de fraude
+  - **Regresión**: Predicción de precios inmobiliarios, demanda
+* **Algoritmos**: Decision Trees, Random Forest, Linear Regression, Gradient Boosting
+
+📊 **Total**: 4 notebooks teóricos + 6 notebooks prácticos
+
+---
+
+### 2️⃣ Aprendizaje No Supervisado (`Aprendizaje No Supervisado/`)
+
+**Definición**: Descubrir patrones ocultos en datos **sin etiquetas**.
+
+* **Carpetas**: `Clustering/`
+* **Datos**: Sin respuestas correctas conocidas
+* **Objetivo**: Encontrar estructura, grupos, relaciones
+* **Ejemplos**:
+  - **Clustering**: Segmentación de clientes, agrupación de documentos
+  - **Reducción de dimensionalidad**: PCA, t-SNE (próximamente)
+  - **Detección de anomalías**: Fraude, fallas (próximamente)
+* **Algoritmos**: K-Means, DBSCAN, Hierarchical Clustering
+
+📊 **Total**: 1 notebook teórico + 1 notebook práctico
+
+---
+
+### 3️⃣ Aprendizaje por Refuerzo (`Aprendizaje por Refuerzo/`)
+
+**Definición**: Agente aprende mediante **interacción** con entorno, optimizando recompensas acumuladas.
+
+* **Datos**: Secuencias de (estado, acción, recompensa)
+* **Objetivo**: Maximizar recompensa a largo plazo
+* **Ejemplos**:
+  - Juegos (AlphaGo, Atari)
+  - Robótica (navegación, manipulación)
+  - Finanzas (trading algorítmico)
+  - Vehículos autónomos
+* **Algoritmos**: Q-Learning, SARSA, DQN, PPO, SAC
+
+📊 **Total**: 1 notebook teórico + 1 notebook práctico
+
+---
+
+## 📖 Notebooks Teóricos (Resumen)
+
+### 0️⃣ Fundamentos
 
 **01_Introduccion_Machine_Learning.ipynb** (7 celdas, 425 líneas)
 - Tipos de aprendizaje (supervisado, no supervisado, refuerzo)
 - Proceso completo de ML (pipeline)
-- Métricas de evaluación (clasificación y regresión)
-- Overfitting/Underfitting y regularización
-- Ingeniería de características
+- Métricas de evaluación
+- Overfitting/Underfitting
 
 **02_Matematicas_Esenciales.ipynb** (8 celdas, 493 líneas)
-- Álgebra lineal (vectores, matrices, operaciones)
-- Cálculo (derivadas, gradientes, backpropagation)
-- Probabilidad y estadística (Bayes, distribuciones, MLE)
+- Álgebra lineal (vectores, matrices)
+- Cálculo (derivadas, gradientes)
+- Probabilidad y estadística
 - Optimización (GD, SGD, Adam)
-- Teoría de la información (entropía, cross-entropy)
 
-#### 1️⃣ Clasificación - Predicción de Churn
+### 1️⃣ Aprendizaje Supervisado
 
-**Teoría**: `Teoria_Arboles_Decision.ipynb` (7 celdas, 311 líneas)
-- Algoritmo ID3, entropía, índice Gini
-- Poda pre/post, control de overfitting
-- Ventajas y desventajas
+#### Clasificación
 
-**Práctica**: `Arbol_Decision_Clasificacion.ipynb`
-- **Algoritmo**: Decision Tree Classifier
-- **Problema**: Predicción de churn (abandono de clientes)
-- **Dataset**: 10,000 clientes de telecomunicaciones (sintético)
-- **Métricas**: Accuracy, Precision, Recall, F1-Score, AUC-ROC
+**Teoria_Arboles_Decision.ipynb** (7 celdas, 311 líneas)
+- Algoritmo ID3, entropía, Gini
+- Poda, overfitting
 
-#### 2️⃣ Regresión - Predicción de Precios Inmobiliarios
+**Teoria_Random_Forest.ipynb** (8 celdas, ~400 líneas)
+- Ensemble learning, bagging
+- Feature importance, OOB error
 
-**Teoría**: `Teoria_Regresion.ipynb` (7 celdas, 336 líneas)
-- Regresión lineal simple y múltiple
-- Regularización (Ridge, Lasso, Elastic Net)
+#### Regresión
+
+**Teoria_Regresion.ipynb** (7 celdas, 336 líneas)
+- Regresión lineal (simple, múltiple)
+- Regularización (Ridge, Lasso)
 - Métodos no lineales
 
-**Práctica**: 2 notebooks
-- `Arbol_Decision_Regresion.ipynb` (Decision Tree Regressor)
-- `Regresion_Lineal_Multiple.ipynb` (Linear Regression)
-- **Problema**: Predicción de precios de propiedades
-- **Dataset**: 10,000 propiedades (sintético)
-- **Métricas**: RMSE, MAE, R²
+### 2️⃣ Aprendizaje No Supervisado
 
-#### 3️⃣ Clustering - Segmentación de Clientes
+**Teoria_Clustering.ipynb** (7 celdas, 370 líneas)
+- K-Means, DBSCAN, Hierarchical
+- Métricas (Silhouette, Elbow)
+- Determinación de K
 
-**Teoría**: `Teoria_Clustering.ipynb` (7 celdas, 370 líneas)
-- K-Means, métricas de similitud
-- Selección de k (método del codo, silueta)
-- DBSCAN, GMM, hierarchical clustering
+### 3️⃣ Aprendizaje por Refuerzo
 
-**Práctica**: `KMeans_Clustering.ipynb`
-- **Algoritmo**: K-Means Clustering
-- **Problema**: Segmentación de clientes de e-commerce
-- **Dataset**: 5,000 clientes (sintético)
-- **Métricas**: WSSSE, Silhouette Score
+**Teoria_Reinforcement_Learning.ipynb** (3 celdas, ~2000 líneas)
+- MDP, funciones de valor, Bellman
+- Q-Learning, SARSA, DQN
+- Exploración vs Explotación
+- Aplicaciones modernas
 
 ---
 
-## 🚀 Guía de Inicio Rápido
+## 💻 Notebooks Prácticos (Resumen)
 
-### Paso 1: Crear cuenta en Databricks Free Edition (GRATIS)
+### Clasificación
+1. **Arbol_Decision_Clasificacion**: Churn prediction (Decision Tree)
+2. **Random_Forest_Clasificacion**: Churn prediction (Random Forest, mejora vs DT)
 
-1. Visita: **https://community.cloud.databricks.com/login.html**
-2. Haz clic en **"Sign up for Free Edition"**
-3. Completa el formulario y verifica tu email
-4. Inicia sesión
+### Regresión
+1. **Regresion_Lineal_Multiple**: Precios inmobiliarios (Linear)
+2. **Arbol_Decision_Regresion**: Precios inmobiliarios (Tree)
+3. **Random_Forest_Regresion**: Precios inmobiliarios (Random Forest, mejor R²)
 
-### Paso 2: Clonar este repositorio
+### Clustering
+1. **KMeans_Clustering**: Segmentación de clientes
 
-**Opción A: Usando Git (Recomendado)**
-
-1. Menú **"Workspace"**
-2. Clic derecho en tu carpeta de usuario
-3. **"Create" → "Repo"**
-4. URL: `https://github.com/cristiandarioortegayubro/ML`
-5. **"Create Repo"**
-
-**Opción B: Descarga manual**
-
-1. Descarga este repo como ZIP desde GitHub
-2. Descomprime
-3. En Databricks: Clic derecho → **"Import"**
-4. Arrastra los archivos `.py`
-
-### Paso 4: Ejecutar notebooks
-
-1. Abre cualquier notebook (ej: `ML/Clasificacion/Arbol_Decision_Clasificacion`)
-2. Asegúrate de que tu cluster esté seleccionado y activo
-3. Ejecuta las celdas:
-   - **Shift + Enter**: Celda por celda
-   - **Menú "Run" → "Run All"**: Todas a la vez
-4. Observa resultados, gráficos y métricas
+### Reinforcement Learning
+1. **Q_Learning_GridWorld**: Navegación en cuadrícula (Q-Learning)
 
 ---
 
-## 💻 Requisitos
+## 🚀 Orden de Estudio Recomendado
 
-### Databricks Free Edition (Gratis)
+### Para Principiantes (Path Completo):
 
-* **Recursos**: 15 GB RAM, 2 cores
-* **Limitaciones**: Cluster se detiene tras 2h inactividad
-* **Suficiente para**: Todos estos notebooks
+```
+1. Fundamentos/
+   ├── 01_Introduccion_Machine_Learning      [1-2 horas]
+   └── 02_Matematicas_Esenciales             [2-3 horas]
+
+2. Aprendizaje Supervisado/
+   ├── Clasificacion/
+   │   ├── Teoria_Arboles_Decision           [1 hora]
+   │   ├── Arbol_Decision_Clasificacion      [30 min]
+   │   ├── Teoria_Random_Forest              [1 hora]
+   │   └── Random_Forest_Clasificacion       [30 min]
+   │
+   └── Regresion/
+       ├── Teoria_Regresion                  [1 hora]
+       ├── Regresion_Lineal_Multiple         [30 min]
+       ├── Arbol_Decision_Regresion          [30 min]
+       └── Random_Forest_Regresion           [30 min]
+
+3. Aprendizaje No Supervisado/
+   └── Clustering/
+       ├── Teoria_Clustering                 [1 hora]
+       └── KMeans_Clustering                 [30 min]
+
+4. Aprendizaje por Refuerzo/
+   ├── Teoria_Reinforcement_Learning         [2-3 horas]
+   └── Q_Learning_GridWorld                  [1 hora]
+
+TOTAL: ~15-18 horas de estudio
+```
+
+### Para Avanzados (Fast Track):
+
+1. Revisar fundamentos rápidamente
+2. Saltar directamente a Random Forest (clasificación y regresión)
+3. Explorar Reinforcement Learning (Q-Learning, DQN)
+4. Experimentar con hiperparámetros y datasets propios
 
 ---
 
-## 📚 Conceptos Cubiertos
+## 🎓 Características Educativas
 
-* **Fundamentos teóricos**: Tipos de aprendizaje, matemáticas esenciales, métricas
-* **Aprendizaje Supervisado**: Clasificación y Regresión (teoría y práctica)
-* **Aprendizaje No Supervisado**: Clustering (teoría y práctica)
-* **Preparación de datos**: StringIndexer, VectorAssembler, StandardScaler
-* **Evaluación**: Métricas de clasificación, regresión y clustering
-* **Visualización**: Matplotlib, Seaborn
+### ✅ Contenido Teórico Riguroso
+
+* **Fórmulas matemáticas**: Todas las ecuaciones clave explicadas
+* **Pseudocódigo**: Algoritmos paso a paso
+* **Comparaciones**: Ventajas y desventajas de cada método
+* **Intuición**: Explicaciones conceptuales claras
+
+### ✅ Código Práctico Production-Ready
+
+* **PySpark ML nativo**: Escalable para Big Data
+* **Datasets sintéticos realistas**: 10,000 muestras con reglas de negocio
+* **Visualizaciones**: Matplotlib, Seaborn
+* **Métricas completas**: Accuracy, RMSE, Silhouette, etc.
+* **Comparaciones**: Múltiples modelos lado a lado
+
+### ✅ README Comprensivos
+
+Cada carpeta incluye README con:
+* Descripción conceptual
+* Lista de notebooks con contenido detallado
+* Orden de estudio recomendado
+* Aplicaciones reales del mundo empresarial
+* Enlaces a recursos externos
 
 ---
 
-## 💬 Preguntas Frecuentes
+## 📊 Estadísticas del Repositorio
 
-**¿Necesito experiencia previa en Spark?**
-No. Los notebooks incluyen explicaciones detalladas.
+| Categoría | Cantidad | Líneas |
+|-----------|----------|--------|
+| **Notebooks teóricos** | 8 | ~4,735 |
+| **Notebooks prácticos** | 7 | ~1,500 |
+| **Total notebooks** | 15 | ~6,235 |
+| **README files** | 7 | ~1,200 |
+| **Total líneas** | - | **~7,435** |
 
-**¿Puedo usar mis propios datos?**
-Sí. Sube tu CSV y adapta la preparación de datos.
+### Distribución por Paradigma
 
-**¿Por qué notebooks .ipynb?**
-Todos los notebooks están en formato Jupyter (.ipynb) para compatibilidad total con GitHub y Databricks.
+| Paradigma | Teoría | Práctica | Total |
+|-----------|--------|----------|-------|
+| **Fundamentos** | 2 | 0 | 2 |
+| **Supervisado** | 4 | 6 | 10 |
+| **No Supervisado** | 1 | 1 | 2 |
+| **Por Refuerzo** | 1 | 1 | 2 |
 
 ---
 
-## 📚 Recursos
+## 🛠️ Tecnologías y Herramientas
 
+* **Databricks**: Plataforma unificada de datos e IA
+* **Apache Spark**: Procesamiento distribuido a gran escala
+* **PySpark ML**: Biblioteca de Machine Learning de Spark
+* **Python**: NumPy, Pandas, Matplotlib, Seaborn
+* **Serverless Compute**: Ejecución sin gestión de clusters
+* **MLflow**: Tracking de experimentos (próximamente)
+
+---
+
+## 💼 Aplicaciones del Mundo Real
+
+### Clasificación
+* 📞 Telecom: Predicción de churn
+* 🏦 Banking: Detección de fraude
+* 📧 Marketing: Spam detection
+* 🏥 Healthcare: Diagnóstico de enfermedades
+
+### Regresión
+* 🏡 Real Estate: Valoración de propiedades
+* 📈 Finance: Predicción de precios de acciones
+* 🛒 E-commerce: Forecasting de demanda
+
+### Clustering
+* 🛍️ Retail: Segmentación de clientes (RFM)
+* 📰 Media: Agrupación de noticias por tema
+* 🧬 Bioinformática: Análisis de genes
+
+### Reinforcement Learning
+* 🎮 Gaming: AlphaGo, OpenAI Five
+* 🤖 Robótica: Navegación, manipulación
+* 💰 Trading: Optimización de estrategias
+* 🚗 Vehículos autónomos
+
+---
+
+## 📚 Recursos Adicionales
+
+### Documentación oficial
 * [PySpark ML Guide](https://spark.apache.org/docs/latest/ml-guide.html)
-* [Databricks Documentation](https://docs.databricks.com/)
-* [Databricks Academy (Gratis)](https://www.databricks.com/learn/training)
+* [Databricks ML Documentation](https://docs.databricks.com/machine-learning/index.html)
+
+### Cursos recomendados
+* **Coursera**: Machine Learning (Andrew Ng)
+* **Fast.ai**: Practical Deep Learning
+* **UC Berkeley CS 285**: Deep Reinforcement Learning
+
+### Libros
+* **"Hands-On Machine Learning"** - Aurélien Géron
+* **"Pattern Recognition and Machine Learning"** - Christopher Bishop
+* **"Reinforcement Learning: An Introduction"** - Sutton & Barto
 
 ---
 
-## ✅ Checklist
+## 🤝 Contribuciones
 
-- [ ] Creé cuenta en Databricks
-- [ ] Cloné el repositorio
-- [ ] Ejecuté notebook de Clasificación
-- [ ] Ejecuté notebooks de Regresión
-- [ ] Ejecuté notebook de Clustering
-- [ ] Experimenté con mis propios datos
+Este es un repositorio educativo en constante evolución. Áreas de expansión futura:
+
+### Próximos temas:
+* ✅ **Supervisado**: Gradient Boosting (XGBoost, LightGBM), SVM, Logistic Regression
+* ✅ **No Supervisado**: PCA, t-SNE, DBSCAN, Detección de anomalías
+* ✅ **Refuerzo**: SARSA, DQN, Policy Gradients, Actor-Critic
+* ✅ **Deep Learning**: Redes neuronales, CNNs, RNNs, Transformers
+* ✅ **MLOps**: MLflow, Feature Store, Model Serving
 
 ---
 
-**¡Mucho éxito en tu viaje de Machine Learning!** 🎓🚀
+## 📄 Licencia
+
+Este repositorio es de uso educativo. Se permite copiar, modificar y distribuir con atribución.
+
+---
+
+## 👨‍💻 Autor
+
+Creado con 💙 para la comunidad de Data Science y Machine Learning.
+
+**¡Explora, aprende y experimenta!** 🚀✨
