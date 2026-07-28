@@ -2,17 +2,35 @@
 
 ## 📂 Contenido
 
-Esta carpeta contiene ejemplos de **Machine Learning no supervisado: Clustering** usando PySpark ML.
+Esta carpeta contiene notebooks **teóricos y prácticos** de **Machine Learning no supervisado: Clustering** usando PySpark ML.
 
 ### Notebooks:
 
-1. **KMeans_Clustering.py**
-   - **Algoritmo**: K-Means Clustering
-   - **Problema**: Segmentación de clientes de e-commerce
-   - **Dataset**: 5,000 clientes con variables RFM (Recency, Frequency, Monetary)
-   - **Métrica**: WSSSE, Silhouette Score
-   - **Caso de uso**: Diseñar estrategias de marketing personalizadas por segmento
-   - **Segmentos**: VIP, Regulares, En Riesgo, Nuevos/Ocasionales
+#### 📖 Teoría
+
+**Teoria_Clustering.ipynb** (7 celdas, 370 líneas)
+- **Introducción al Clustering**: Definición, diferencia con aprendizaje supervisado
+- **K-Means**: Algoritmo, pseudocódigo, convergencia, criterio de optimización
+- **Métricas de Similitud**: Distancia euclidiana, Manhattan, coseno
+- **Selección de K**: Método del codo, silueta, gap statistic
+- **Otros Algoritmos**: DBSCAN, GMM, Hierarchical Clustering
+- **Desafíos y Mejores Prácticas**: Escalamiento, inicialización, interpretación
+- **Conclusiones**: Cuándo usar cada algoritmo
+
+**Fórmulas clave:**
+- Distancia euclidiana: $d(\mathbf{x}, \mathbf{y}) = \sqrt{\sum_{i=1}^{n}(x_i - y_i)^2}$
+- WCSS (Objetivo K-Means): $\min \sum_{i=1}^{k} \sum_{\mathbf{x} \in C_i} ||\mathbf{x} - \boldsymbol{\mu}_i||^2$
+- Silhouette: $s(i) = \frac{b(i) - a(i)}{\max(a(i), b(i))}$
+
+#### 💻 Práctica
+
+**KMeans_Clustering.ipynb**
+- **Algoritmo**: K-Means Clustering
+- **Problema**: Segmentación de clientes de e-commerce
+- **Dataset**: 5,000 clientes con variables RFM (Recency, Frequency, Monetary)
+- **Métrica**: WSSSE, Silhouette Score
+- **Caso de uso**: Diseñar estrategias de marketing personalizadas por segmento
+- **Segmentos**: VIP, Regulares, En Riesgo, Nuevos/Ocasionales
 
 ## 🎯 Objetivo
 
@@ -61,24 +79,39 @@ Aprender a descubrir **grupos naturales** en los datos sin etiquetas previas, us
 * Asume clusters esféricos
 * Sensible a inicialización (usar seed)
 
-## 🚀 Cómo usar este notebook
+## 🚀 Orden de Estudio Recomendado
 
+1. **Primero**: Lee el notebook teórico `Teoria_Clustering`
+   - Comprende cómo funciona K-Means
+   - Estudia las métricas de similitud
+   - Aprende a seleccionar K óptimo
+
+2. **Segundo**: Ejecuta el notebook práctico `KMeans_Clustering`
+   - Aplica K-Means en un problema real
+   - Observa el método del codo (Elbow Method)
+   - Interpreta los segmentos de clientes
+
+## 💡 Cómo usar estos notebooks
+
+### Notebook Teórico:
+1. Lee todas las secciones secuencialmente
+2. Comprende las limitaciones de cada algoritmo
+3. Aprende a interpretar las métricas
+4. No ejecutes (es contenido markdown)
+
+### Notebook Práctico:
 1. **Abrir en Databricks**:
-   - Navega a `ML/Clustering`
-   - Abre `KMeans_Clustering`
-
-2. **Ejecutar**:
    - El notebook incluye **Elbow Method** para determinar K óptimo
    - Entrena K-Means con K=4
    - Perfila cada segmento con estadísticas
 
-3. **Interpretar**:
+2. **Interpretar**:
    - **Cluster 0 (VIP)**: Alta frecuencia, alto gasto → Retener con programa VIP
    - **Cluster 1 (Regulares)**: Actividad media → Up-sell a VIP
    - **Cluster 2 (En Riesgo)**: Inactivos → Campaña de reactivación
    - **Cluster 3 (Nuevos)**: Baja actividad → Onboarding
 
-4. **Experimentar**:
+3. **Experimentar**:
    - Prueba con diferentes valores de K
    - Añade nuevas features (categoría de producto, canal preferido)
    - Aplica a tus propios datos de clientes

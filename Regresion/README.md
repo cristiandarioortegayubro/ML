@@ -2,24 +2,44 @@
 
 ## 📂 Contenido
 
-Esta carpeta contiene ejemplos de **Machine Learning supervisado para Regresión** usando PySpark ML.
+Esta carpeta contiene notebooks **teóricos y prácticos** de **Machine Learning supervisado para Regresión** usando PySpark ML.
 
 ### Notebooks:
 
-1. **Arbol_Decision_Regresion.py**
-   - **Algoritmo**: Decision Tree Regressor
-   - **Problema**: Predicción de precios de propiedades inmobiliarias
-   - **Dataset**: 10,000 propiedades (sintético)
-   - **Variables**: Área, habitaciones, baños, antigüedad, distancia al centro, barrio, etc.
-   - **Métricas**: RMSE, MAE, R²
-   - **Caso de uso**: Tasación automática de propiedades para agencia inmobiliaria
+#### 📖 Teoría
 
-2. **Regresion_Lineal_Multiple.py**
-   - **Algoritmo**: Linear Regression
-   - **Problema**: Mismo dataset de propiedades
-   - **Diferencia clave**: Modelo lineal (asume relaciones constantes)
-   - **Ventaja**: Máxima interpretabilidad (coeficientes directos)
-   - **Comparación**: vs Decision Tree para evaluar cuál funciona mejor
+**Teoria_Regresion.ipynb** (7 celdas, 336 líneas)
+- **Introducción**: Definición formal, ejemplos de aplicación
+- **Regresión Lineal Simple**: Modelo, función de costo (MSE), solución de mínimos cuadrados
+- **Regresión Lineal Múltiple**: Forma matricial, solución analítica
+- **Supuestos y Métricas**: Supuestos del modelo lineal, R², RMSE, MAE
+- **Regularización**: Ridge (L2), Lasso (L1), Elastic Net
+- **Regresión No Lineal**: Polinomial, árboles, Random Forest, Gradient Boosting
+- **Conclusiones**: Resumen y cuándo usar cada método
+
+**Fórmulas clave:**
+- Regresión simple: $y = \beta_0 + \beta_1 x + \epsilon$
+- Solución matricial: $\hat{\boldsymbol{\beta}} = (\mathbf{X}^T\mathbf{X})^{-1}\mathbf{X}^T\mathbf{y}$
+- Ridge: $J(\boldsymbol{\beta}) = MSE + \lambda ||\boldsymbol{\beta}||_2^2$
+- Lasso: $J(\boldsymbol{\beta}) = MSE + \lambda ||\boldsymbol{\beta}||_1$
+- R²: $R^2 = 1 - \frac{SS_{res}}{SS_{tot}}$
+
+#### 💻 Práctica
+
+**1. Arbol_Decision_Regresion.ipynb**
+- **Algoritmo**: Decision Tree Regressor
+- **Problema**: Predicción de precios de propiedades inmobiliarias
+- **Dataset**: 10,000 propiedades (sintético)
+- **Variables**: Área, habitaciones, baños, antigüedad, distancia al centro, barrio, etc.
+- **Métricas**: RMSE, MAE, R²
+- **Caso de uso**: Tasación automática de propiedades para agencia inmobiliaria
+
+**2. Regresion_Lineal_Multiple.ipynb**
+- **Algoritmo**: Linear Regression
+- **Problema**: Mismo dataset de propiedades
+- **Diferencia clave**: Modelo lineal (asume relaciones constantes)
+- **Ventaja**: Máxima interpretabilidad (coeficientes directos)
+- **Comparación**: vs Decision Tree para evaluar cuál funciona mejor
 
 ## 🎯 Objetivo
 
@@ -49,18 +69,31 @@ Aprender a construir modelos de regresión que predicen valores **numéricos con
 | **Accuracy** | Menor (si no lineal) | Mayor |
 | **Normalización** | Requerida | No requerida |
 
-## 🚀 Cómo usar estos notebooks
+## 🚀 Orden de Estudio Recomendado
 
-1. **Abrir en Databricks**:
-   - Navega a `ML/Regresion`
-   - Abre ambos notebooks
+1. **Primero**: Lee el notebook teórico `Teoria_Regresion`
+   - Comprende la regresión lineal simple y múltiple
+   - Estudia las fórmulas de mínimos cuadrados
+   - Aprende sobre regularización (Ridge, Lasso)
 
-2. **Ejecutar y Comparar**:
-   - Ejecuta ambos notebooks con el mismo dataset
-   - Compara RMSE, MAE y R²
-   - ¿Cuál tiene mejor rendimiento?
+2. **Segundo**: Ejecuta ambos notebooks prácticos
+   - Compara Regresión Lineal vs Árbol de Decisión
+   - Observa las diferencias en interpretabilidad y performance
+   - Decide cuál es mejor para este problema
 
-3. **Experimentar**:
+## 💡 Cómo usar estos notebooks
+
+### Notebook Teórico:
+1. Lee todas las secciones secuencialmente
+2. Toma notas de las fórmulas clave
+3. Comprende cuándo usar cada método
+4. No ejecutes (es contenido markdown)
+
+### Notebooks Prácticos:
+1. Ejecuta ambos notebooks con el mismo dataset
+2. Compara RMSE, MAE y R²
+3. ¿Cuál tiene mejor rendimiento?
+4. Experimenta:
    - Ajusta hiperparámetros
    - Prueba con tus propios datos
    - Añade nuevas features (ej: distancia a transporte público)

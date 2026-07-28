@@ -2,21 +2,39 @@
 
 ## 📂 Contenido
 
-Esta carpeta contiene ejemplos de **Machine Learning supervisado para Clasificación** usando PySpark ML.
+Esta carpeta contiene notebooks **teóricos y prácticos** de **Machine Learning supervisado para Clasificación** usando PySpark ML.
 
 ### Notebooks:
 
-1. **Arbol_Decision_Clasificacion.py**
-   - **Algoritmo**: Decision Tree Classifier
-   - **Problema**: Predicción de churn (abandono de clientes)
-   - **Dataset**: 10,000 clientes de telecomunicaciones (sintético)
-   - **Variables**: Antigüedad, gasto mensual, tipo contrato, llamadas soporte, etc.
-   - **Métricas**: Accuracy, Precision, Recall, F1-Score, AUC-ROC
-   - **Caso de uso**: Identificar clientes en riesgo de abandono para campañas de retención
+#### 📖 Teoría
+
+**Teoria_Arboles_Decision.ipynb** (7 celdas, 311 líneas)
+- **Estructura de árboles**: Nodos, ramas, hojas, definición formal
+- **Algoritmo ID3**: Pseudocódigo y proceso de construcción
+- **Entropía y Ganancia de Información**: Fórmulas, propiedades, selección de atributos
+- **Índice Gini**: Impureza de Gini, comparación con entropía
+- **Poda (Pruning)**: Pre-pruning, post-pruning, control de overfitting
+- **Ventajas y Desventajas**: Interpretabilidad, inestabilidad, fronteras de decisión
+- **Conclusiones**: Conceptos clave y próximos pasos
+
+**Fórmulas clave:**
+- Entropía: $H(S) = -\sum_{i=1}^{c} p_i \log_2(p_i)$
+- Ganancia de Información: $IG(S, A) = H(S) - \sum_{v} \frac{|S_v|}{|S|} H(S_v)$
+- Índice Gini: $\text{Gini}(S) = 1 - \sum_{i=1}^{c} p_i^2$
+
+#### 💻 Práctica
+
+**Arbol_Decision_Clasificacion.ipynb**
+- **Algoritmo**: Decision Tree Classifier
+- **Problema**: Predicción de churn (abandono de clientes)
+- **Dataset**: 10,000 clientes de telecomunicaciones (sintético)
+- **Variables**: Antigüedad, gasto mensual, tipo contrato, llamadas soporte, etc.
+- **Métricas**: Accuracy, Precision, Recall, F1-Score, AUC-ROC
+- **Caso de uso**: Identificar clientes en riesgo de abandono para campañas de retención
 
 ## 🎯 Objetivo
 
-Aprender a construir modelos de clasificación binaria que predicen una categoría (Churn Sí/No) basándose en características del cliente.
+Aprender a construir modelos de clasificación binaria que predicen una **categoría** (Churn Sí/No) basándose en características del cliente.
 
 ## 📊 Concepto: Clasificación
 
@@ -33,20 +51,34 @@ Aprender a construir modelos de clasificación binaria que predicen una categor�
 * **Logistic Regression**: Modelo lineal probabilístico
 * **Support Vector Machines**: Hiperplanos de separación
 
-## 🚀 Cómo usar estos notebooks
+## 🚀 Orden de Estudio Recomendado
 
-1. **Abrir en Databricks**:
-   - Navega a la carpeta `ML/Clasificacion` en tu workspace
-   - Abre `Arbol_Decision_Clasificacion`
+1. **Primero**: Lee el notebook teórico `Teoria_Arboles_Decision`
+   - Comprende cómo funcionan los árboles de decisión
+   - Estudia las fórmulas de entropía y Gini
+   - Aprende sobre poda y overfitting
 
-2. **Ejecutar**:
-   - Asegúrate de tener un cluster activo (Serverless o standard)
-   - Ejecuta todas las celdas secuencialmente
+2. **Segundo**: Ejecuta el notebook práctico `Arbol_Decision_Clasificacion`
+   - Aplica lo aprendido en un problema real
+   - Observa cómo se calculan las métricas
+   - Experimenta con diferentes hiperparámetros
 
-3. **Experimentar**:
-   - Cambia hiperparámetros (`maxDepth`, `minInstancesPerNode`)
-   - Prueba con tus propios datos reales
-   - Compara con otros algoritmos (Random Forest, GBT)
+## 💡 Cómo usar estos notebooks
+
+### Notebook Teórico:
+1. Lee secuencialmente todas las celdas
+2. Toma notas de las fórmulas clave
+3. Comprende las ventajas y limitaciones
+4. No ejecutes (es contenido markdown)
+
+### Notebook Práctico:
+1. Asegúrate de tener un cluster activo
+2. Ejecuta todas las celdas secuencialmente
+3. Observa resultados y visualizaciones
+4. Experimenta:
+   - Cambia `maxDepth` (profundidad máxima)
+   - Ajusta `minInstancesPerNode` (mínimo de ejemplos)
+   - Prueba con tus propios datos
 
 ## 📚 Recursos
 

@@ -1,54 +1,92 @@
 # Machine Learning con PySpark en Databricks
 
-🎓 **Repositorio educativo** con ejemplos prácticos de Machine Learning usando PySpark ML en Databricks.
+🎓 **Repositorio educativo** con notebooks teóricos y prácticos de Machine Learning usando PySpark ML en Databricks.
 
 ## 📚 Contenido
 
-Este repositorio contiene **4 notebooks completos** que cubren los tres tipos principales de Machine Learning:
+Este repositorio contiene **9 notebooks completos** divididos en **teoría** y **práctica**, cubriendo fundamentos y los tres tipos principales de Machine Learning.
 
 ### 📂 Estructura del Proyecto
 
 ```
 ML/
+├── Fundamentos/
+│   ├── 01_Introduccion_Machine_Learning.ipynb  [TEORIA]
+│   ├── 02_Matematicas_Esenciales.ipynb         [TEORIA]
+│   └── README.md
 ├── Clasificacion/
-│   ├── Arbol_Decision_Clasificacion.py
+│   ├── Teoria_Arboles_Decision.ipynb           [TEORIA]
+│   ├── Arbol_Decision_Clasificacion.ipynb      [PRACTICA]
 │   └── README.md
 ├── Regresion/
-│   ├── Arbol_Decision_Regresion.py
-│   ├── Regresion_Lineal_Multiple.py
+│   ├── Teoria_Regresion.ipynb                  [TEORIA]
+│   ├── Arbol_Decision_Regresion.ipynb          [PRACTICA]
+│   ├── Regresion_Lineal_Multiple.ipynb         [PRACTICA]
 │   └── README.md
 ├── Clustering/
-│   ├── KMeans_Clustering.py
+│   ├── Teoria_Clustering.ipynb                 [TEORIA]
+│   ├── KMeans_Clustering.ipynb                 [PRACTICA]
 │   └── README.md
 └── README.md (este archivo)
 ```
 
-### 1️⃣ Clasificación - Predicción de Churn
+### 📖 Notebooks Teóricos (1,935 líneas de contenido académico)
 
-**Notebook**: `Clasificacion/Arbol_Decision_Clasificacion.py`
+#### 0️⃣ Fundamentos
 
-* **Algoritmo**: Decision Tree Classifier
-* **Problema**: Predecir qué clientes abandonarán una empresa de telecomunicaciones
-* **Dataset**: 10,000 clientes (sintético)
-* **Métricas**: Accuracy, Precision, Recall, F1-Score, AUC-ROC
+**01_Introduccion_Machine_Learning.ipynb** (7 celdas, 425 líneas)
+- Tipos de aprendizaje (supervisado, no supervisado, refuerzo)
+- Proceso completo de ML (pipeline)
+- Métricas de evaluación (clasificación y regresión)
+- Overfitting/Underfitting y regularización
+- Ingeniería de características
 
-### 2️⃣ Regresión - Predicción de Precios Inmobiliarios
+**02_Matematicas_Esenciales.ipynb** (8 celdas, 493 líneas)
+- Álgebra lineal (vectores, matrices, operaciones)
+- Cálculo (derivadas, gradientes, backpropagation)
+- Probabilidad y estadística (Bayes, distribuciones, MLE)
+- Optimización (GD, SGD, Adam)
+- Teoría de la información (entropía, cross-entropy)
 
-**Notebook 1**: `Regresion/Arbol_Decision_Regresion.py` (Decision Tree Regressor)
-**Notebook 2**: `Regresion/Regresion_Lineal_Multiple.py` (Linear Regression)
+#### 1️⃣ Clasificación - Predicción de Churn
 
-* **Problema**: Predecir precio de venta de propiedades
-* **Dataset**: 10,000 propiedades (sintético)
-* **Métricas**: RMSE, MAE, R²
+**Teoría**: `Teoria_Arboles_Decision.ipynb` (7 celdas, 311 líneas)
+- Algoritmo ID3, entropía, índice Gini
+- Poda pre/post, control de overfitting
+- Ventajas y desventajas
 
-### 3️⃣ Clustering - Segmentación de Clientes
+**Práctica**: `Arbol_Decision_Clasificacion.ipynb`
+- **Algoritmo**: Decision Tree Classifier
+- **Problema**: Predicción de churn (abandono de clientes)
+- **Dataset**: 10,000 clientes de telecomunicaciones (sintético)
+- **Métricas**: Accuracy, Precision, Recall, F1-Score, AUC-ROC
 
-**Notebook**: `Clustering/KMeans_Clustering.py`
+#### 2️⃣ Regresión - Predicción de Precios Inmobiliarios
 
-* **Algoritmo**: K-Means Clustering
-* **Problema**: Segmentar clientes de e-commerce
-* **Dataset**: 5,000 clientes (sintético)
-* **Métricas**: WSSSE, Silhouette Score
+**Teoría**: `Teoria_Regresion.ipynb` (7 celdas, 336 líneas)
+- Regresión lineal simple y múltiple
+- Regularización (Ridge, Lasso, Elastic Net)
+- Métodos no lineales
+
+**Práctica**: 2 notebooks
+- `Arbol_Decision_Regresion.ipynb` (Decision Tree Regressor)
+- `Regresion_Lineal_Multiple.ipynb` (Linear Regression)
+- **Problema**: Predicción de precios de propiedades
+- **Dataset**: 10,000 propiedades (sintético)
+- **Métricas**: RMSE, MAE, R²
+
+#### 3️⃣ Clustering - Segmentación de Clientes
+
+**Teoría**: `Teoria_Clustering.ipynb` (7 celdas, 370 líneas)
+- K-Means, métricas de similitud
+- Selección de k (método del codo, silueta)
+- DBSCAN, GMM, hierarchical clustering
+
+**Práctica**: `KMeans_Clustering.ipynb`
+- **Algoritmo**: K-Means Clustering
+- **Problema**: Segmentación de clientes de e-commerce
+- **Dataset**: 5,000 clientes (sintético)
+- **Métricas**: WSSSE, Silhouette Score
 
 ---
 
@@ -101,8 +139,9 @@ ML/
 
 ## 📚 Conceptos Cubiertos
 
-* **Aprendizaje Supervisado**: Clasificación y Regresión
-* **Aprendizaje No Supervisado**: Clustering
+* **Fundamentos teóricos**: Tipos de aprendizaje, matemáticas esenciales, métricas
+* **Aprendizaje Supervisado**: Clasificación y Regresión (teoría y práctica)
+* **Aprendizaje No Supervisado**: Clustering (teoría y práctica)
 * **Preparación de datos**: StringIndexer, VectorAssembler, StandardScaler
 * **Evaluación**: Métricas de clasificación, regresión y clustering
 * **Visualización**: Matplotlib, Seaborn
@@ -117,8 +156,8 @@ No. Los notebooks incluyen explicaciones detalladas.
 **¿Puedo usar mis propios datos?**
 Sí. Sube tu CSV y adapta la preparación de datos.
 
-**¿Por qué archivos .py en lugar de .ipynb?**
-Databricks usa formato Source (.py) pero se editan como notebooks interactivos. Puedes exportar a .ipynb desde el menú.
+**¿Por qué notebooks .ipynb?**
+Todos los notebooks están en formato Jupyter (.ipynb) para compatibilidad total con GitHub y Databricks.
 
 ---
 
