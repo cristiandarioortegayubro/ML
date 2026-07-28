@@ -24,6 +24,22 @@ Esta carpeta contiene los **notebooks teóricos fundamentales** que establecen l
    - **Teoría de la Información**: Entropía, cross-entropy, divergencia KL, información mutua
    - **Conclusiones**: Resumen de fórmulas esenciales
 
+3. **03_Preprocesamiento_y_Feature_Engineering.ipynb** (12 celdas, ~600 líneas)
+   - **Limpieza de datos**: Valores faltantes (imputación), duplicados, outliers (IQR, Z-Score, Winsorization)
+   - **Encoding**: Label encoding (ordinales), One-hot encoding (nominales), Target/Frequency encoding
+   - **Scaling**: Standardization (Z-Score), Min-Max Normalization, Robust Scaling
+   - **Feature Engineering**: Features de fecha/tiempo, interacciones, agregaciones, binning, transformaciones matemáticas
+   - **Selección de Features**: Correlación, Feature Importance, RFE, Variance Threshold
+   - **Ejemplos prácticos**: Demostraciones con sklearn y pandas
+
+4. **04_Evaluacion_y_Validacion.ipynb** (8 celdas, ~450 líneas)
+   - **Métricas de Clasificación**: Matriz de confusión, Accuracy, Precision, Recall, F1-Score, ROC-AUC
+   - **Métricas de Regresión**: MSE, RMSE, MAE, R²
+   - **Validación Cruzada**: Train/Test Split, K-Fold CV, Stratified K-Fold
+   - **Overfitting y Underfitting**: Síntomas, diagnóstico, soluciones
+   - **Bias-Variance Tradeoff**: Teoría y curvas de aprendizaje
+   - **Ejemplos prácticos**: Clasificación desbalanceada, regresión, diagnóstico de modelos
+
 ## 🎯 Objetivo
 
 Estos notebooks proporcionan la **base teórica rigurosa** necesaria para comprender cómo funcionan los algoritmos de Machine Learning, por qué funcionan, y cuándo aplicarlos.

@@ -118,6 +118,21 @@ ML/
 - Probabilidad y estadística
 - Optimización (GD, SGD, Adam)
 
+
+**03_Preprocesamiento_y_Feature_Engineering.ipynb** (12 celdas, ~600 líneas)
+- Limpieza de datos (valores faltantes, outliers, IQR, Winsorization)
+- Encoding (Label, One-hot, Target, Frequency)
+- Scaling (Standardization, Min-Max, Robust)
+- Feature Engineering (fecha/tiempo, interacciones, agregaciones, binning)
+- Selección de features (correlación, importancia, RFE, Variance Threshold)
+
+**04_Evaluacion_y_Validacion.ipynb** (8 celdas, ~450 líneas)
+- Métricas clasificación (Accuracy, Precision, Recall, F1, ROC-AUC)
+- Métricas regresión (MSE, RMSE, MAE, R²)
+- Validación cruzada (K-Fold, Stratified K-Fold)
+- Overfitting/Underfitting: síntomas, diagnóstico, soluciones
+- Bias-Variance Tradeoff, curvas de aprendizaje
+
 ### 1️⃣ Aprendizaje Supervisado
 
 #### Clasificación
@@ -254,9 +269,9 @@ Aprende a usar **Databricks AutoML** para generar modelos automáticamente e imp
 |----------|------|-------------|--------|
 | [Teoria_AutoML.ipynb](AutoML/Teoria_AutoML.ipynb) | Teoría | Conceptos de AutoML, MLOps, herramientas, comparación Manual vs AutoML | 4 |
 | [Databricks_AutoML_Clasificacion.ipynb](AutoML/Databricks_AutoML_Clasificacion.ipynb) | Práctica | AutoML para clasificación (churn), comparación con modelo manual, MLflow | 13 |
-| [Databricks_AutoML_Regresion.ipynb](AutoML/Databricks_AutoML_Regresion.ipynb) | Práctica | AutoML para regresión, métricas RMSE/MAE/R² | 🚧 |
-| [Genie_Assisted_ML_Pipeline.ipynb](AutoML/Genie_Assisted_ML_Pipeline.ipynb) | Práctica | Pipelines completos con Genie Code como asistente | 🚧 |
-| [MLflow_Experiment_Tracking.ipynb](AutoML/MLflow_Experiment_Tracking.ipynb) | Práctica | Tracking, Model Registry, deployment con MLflow | 🚧 |
+| [Databricks_AutoML_Regresion.ipynb](AutoML/Databricks_AutoML_Regresion.ipynb) | Práctica | AutoML para regresión, métricas RMSE/MAE/R² | 8 |
+| [Genie_Assisted_ML_Pipeline.ipynb](AutoML/Genie_Assisted_ML_Pipeline.ipynb) | Práctica | Pipelines completos con Genie Code como asistente | 8 |
+| [MLflow_Experiment_Tracking.ipynb](AutoML/MLflow_Experiment_Tracking.ipynb) | Práctica | Tracking, Model Registry, deployment con MLflow | 7 |
 
 **Conceptos clave:**
 * 🤖 **AutoML**: Preprocesamiento automático, feature engineering, optimización de hiperparámetros
