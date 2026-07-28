@@ -54,10 +54,10 @@ ML/
 
 ## 🚀 Guía de Inicio Rápido
 
-### Paso 1: Crear cuenta en Databricks Community Edition (GRATIS)
+### Paso 1: Crear cuenta en Databricks Free Edition (GRATIS)
 
 1. Visita: **https://community.cloud.databricks.com/login.html**
-2. Haz clic en **"Sign up for Community Edition"**
+2. Haz clic en **"Sign up for Free Edition"**
 3. Completa el formulario y verifica tu email
 4. Inicia sesión
 
@@ -100,7 +100,7 @@ ML/
 
 ## 💻 Requisitos
 
-### Databricks Community Edition (Gratis)
+### Databricks Free Edition (Gratis)
 
 * **Recursos**: 15 GB RAM, 2 cores
 * **Limitaciones**: Cluster se detiene tras 2h inactividad
