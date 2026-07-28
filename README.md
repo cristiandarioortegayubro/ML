@@ -244,6 +244,31 @@ Cada carpeta incluye README con:
 
 ---
 
+
+### 5️⃣ **AutoML y MLOps** ⚡ NUEVO
+**Automatización y Producción de Machine Learning**
+
+Aprende a usar **Databricks AutoML** para generar modelos automáticamente e implementar **MLOps** para llevar modelos a producción de forma escalable.
+
+| Notebook | Tipo | Descripción | Celdas |
+|----------|------|-------------|--------|
+| [Teoria_AutoML.ipynb](AutoML/Teoria_AutoML.ipynb) | Teoría | Conceptos de AutoML, MLOps, herramientas, comparación Manual vs AutoML | 4 |
+| [Databricks_AutoML_Clasificacion.ipynb](AutoML/Databricks_AutoML_Clasificacion.ipynb) | Práctica | AutoML para clasificación (churn), comparación con modelo manual, MLflow | 13 |
+| [Databricks_AutoML_Regresion.ipynb](AutoML/Databricks_AutoML_Regresion.ipynb) | Práctica | AutoML para regresión, métricas RMSE/MAE/R² | 🚧 |
+| [Genie_Assisted_ML_Pipeline.ipynb](AutoML/Genie_Assisted_ML_Pipeline.ipynb) | Práctica | Pipelines completos con Genie Code como asistente | 🚧 |
+| [MLflow_Experiment_Tracking.ipynb](AutoML/MLflow_Experiment_Tracking.ipynb) | Práctica | Tracking, Model Registry, deployment con MLflow | 🚧 |
+
+**Conceptos clave:**
+* 🤖 **AutoML**: Preprocesamiento automático, feature engineering, optimización de hiperparámetros
+* 🏭 **MLOps**: Experiment tracking, Model Registry, Feature Store, Model Serving, Monitoring
+* 📊 **Comparación**: Manual vs AutoML - cuándo usar cada uno
+* 🔧 **Databricks Stack**: AutoML, MLflow, Feature Store, Model Serving
+* 🎯 **Producción**: Despliegue de modelos, monitoring, reentrenamiento automático
+
+**Tiempo estimado:** 5-7 horas (con notebooks completos)
+
+📖 **[Ver README completo](AutoML/README.md)**
+
 ## 📊 Estadísticas del Repositorio
 
 | Categoría | Cantidad | Líneas |
