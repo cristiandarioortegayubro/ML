@@ -1,4 +1,8 @@
 # Databricks notebook source
+# /// script
+# [tool.databricks.environment]
+# environment_version = "5"
+# ///
 # DBTITLE 1,Título y Caso de Negocio
 # MAGIC %md
 # MAGIC # Predicción de Precios Inmobiliarios usando Regresión Lineal Múltiple
