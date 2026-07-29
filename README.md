@@ -2,6 +2,19 @@
 
 🎓 **Repositorio educativo** con notebooks teóricos y prácticos de Machine Learning usando PySpark ML en Databricks, organizado según los **tres paradigmas fundamentales** de ML.
 
+## 🚀 ¿Nuevo Aquí?
+
+👉 **[LEE PRIMERO: GUÍA DE INICIO RÁPIDO](GUIA_INICIO_RAPIDO.md)** 👈
+
+La guía incluye:
+* ⏱️ Plan de estudio paso a paso (15-20 horas)
+* ✅ Checklist de progreso
+* 🛑 Solución de errores comunes
+* 📚 Recursos complementarios
+* 🎯 Orden recomendado de notebooks
+
+---
+
 ## 📚 Contenido
 
 Este repositorio contiene **21 notebooks completos** divididos en **teoría** y **práctica**, cubriendo desde fundamentos hasta producción con MLOps: **Fundamentos**, **Supervisado**, **No Supervisado**, **Por Refuerzo** y **AutoML/MLOps**.
@@ -104,36 +117,41 @@ ML/
 
 ## 📖 Notebooks Teóricos (Resumen)
 
-### 0️⃣ Fundamentos (4 notebooks)
+### 0️⃣ Fundamentos (4 notebooks) ✅ **ARMONIZADOS 2026**
 
-Base matemática y metodológica esencial antes de algoritmos específicos.
+Base matemática y metodológica esencial antes de algoritmos específicos. Todos los notebooks han sido modernizados con formato limpio (sin legacy markup).
 
-**01_Introduccion_Machine_Learning.ipynb** (7 celdas, 425 líneas)
+**01_Introduccion_Machine_Learning.ipynb** (7 celdas markdown)
 - Tipos de aprendizaje (supervisado, no supervisado, refuerzo)
 - Proceso completo de ML (pipeline)
-- Métricas de evaluación
+- Métricas de evaluación (clasificación y regresión)
 - Overfitting/Underfitting
+- Formato: Markdown moderno con emojis y tablas
 
-**02_Matematicas_Esenciales.ipynb** (8 celdas, 493 líneas)
-- Álgebra lineal (vectores, matrices)
-- Cálculo (derivadas, gradientes)
-- Probabilidad y estadística
-- Optimización (GD, SGD, Adam)
+**02_Matematicas_Esenciales.ipynb** (8 celdas markdown)
+- Álgebra lineal (vectores, matrices, aplicaciones en ML)
+- Cálculo (derivadas, gradientes, backpropagation)
+- Probabilidad y estadística (Bayes, MLE)
+- Optimización (GD, SGD, Mini-Batch, Adam)
+- Teoría de la Información (entropía, cross-entropy, KL)
+- Formato: Markdown con ecuaciones LaTeX
 
+**03_Preprocesamiento_y_Feature_Engineering.ipynb** (12 celdas: 10 markdown + 2 código)
+- Limpieza de datos (valores faltantes, outliers con IQR/Z-Score)
+- Encoding (Label, One-Hot, Target)
+- Scaling (StandardScaler, MinMaxScaler, RobustScaler)
+- Feature Engineering (interacciones, features de fecha, binning)
+- Selección de features (Filter, Wrapper, Embedded methods)
+- Ejemplos ejecutables con sklearn y pandas
+- Formato: Mix moderno de markdown y código Python
 
-**03_Preprocesamiento_y_Feature_Engineering.ipynb** (12 celdas, ~600 líneas)
-- Limpieza de datos (valores faltantes, outliers, IQR, Winsorization)
-- Encoding (Label, One-hot, Target, Frequency)
-- Scaling (Standardization, Min-Max, Robust)
-- Feature Engineering (fecha/tiempo, interacciones, agregaciones, binning)
-- Selección de features (correlación, importancia, RFE, Variance Threshold)
-
-**04_Evaluacion_y_Validacion.ipynb** (8 celdas, ~450 líneas)
-- Métricas clasificación (Accuracy, Precision, Recall, F1, ROC-AUC)
-- Métricas regresión (MSE, RMSE, MAE, R²)
+**04_Evaluacion_y_Validacion.ipynb** (8 celdas: 5 markdown + 3 código)
+- Métricas clasificación (Matriz de confusión, F1, ROC-AUC)
 - Validación cruzada (K-Fold, Stratified K-Fold)
-- Overfitting/Underfitting: síntomas, diagnóstico, soluciones
-- Bias-Variance Tradeoff, curvas de aprendizaje
+- Overfitting/Underfitting: síntomas, diagnóstico con ejemplos
+- Bias-Variance Tradeoff con visualizaciones
+- Ejemplos ejecutables: fraude detection, regresión
+- Formato: Mix moderno de markdown y código Python
 
 ### 1️⃣ Aprendizaje Supervisado
 
@@ -288,22 +306,23 @@ Aprende a usar **Databricks AutoML** para generar modelos automáticamente e imp
 
 ## 📊 Estadísticas del Repositorio
 
-| Categoría | Cantidad | Líneas |
+| Categoría | Cantidad | Estado |
 |-----------|----------|--------|
-| **Notebooks teóricos** | 11 | ~6,700 |
-| **Notebooks prácticos** | 10 | ~3,500 |
-| **Total notebooks** | 21 | ~10,200 |
-| **README files** | 8 | ~1,500 |
-| **Total líneas** | - | **~11,700** |
+| **Notebooks teóricos** | 15 | 4 Fundamentos + 4 Supervisado + 1 No Supervisado + 1 Refuerzo + 1 AutoML |
+| **Notebooks prácticos** | 11 | 6 Supervisado + 1 No Supervisado + 1 Refuerzo + 4 AutoML/MLOps |
+| **Total notebooks** | 26 | **Todos con formato moderno (2026)** |
+| **README files** | 10 | Principal + Fundamentos + Supervisado + AutoML + Otros |
+| **Guías** | 2 | README.md + GUIA_INICIO_RAPIDO.md |
 
 ### Distribución por Paradigma
 
 | Paradigma | Teoría | Práctica | Total |
 |-----------|--------|----------|-------|
-| **Fundamentos** | 2 | 0 | 2 |
+| **Fundamentos** | 4 | 0 | 4 |
 | **Supervisado** | 4 | 6 | 10 |
 | **No Supervisado** | 1 | 1 | 2 |
 | **Por Refuerzo** | 1 | 1 | 2 |
+| **AutoML/MLOps** | 1 | 4 | 5 |
 
 ---
 

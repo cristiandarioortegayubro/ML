@@ -6,7 +6,8 @@ Esta carpeta contiene los **notebooks teóricos fundamentales** que establecen l
 
 ### Notebooks:
 
-1. **01_Introduccion_Machine_Learning.ipynb** (7 celdas, 425 líneas)
+1. **01_Introduccion_Machine_Learning.ipynb** ✅ *Actualizado 2026*
+   - **7 celdas markdown** (formato moderno, sin legacy markup)
    - **¿Qué es Machine Learning?**: Definición formal, programación tradicional vs ML
    - **Tipos de aprendizaje**: Supervisado, no supervisado, por refuerzo
    - **Proceso de ML**: Pipeline completo desde definición del problema hasta implementación
@@ -15,30 +16,34 @@ Esta carpeta contiene los **notebooks teóricos fundamentales** que establecen l
    - **Ingeniería de características**: Escalamiento, codificación, manejo de datos faltantes
    - **Conclusiones**: Recursos y próximos pasos
 
-2. **02_Matematicas_Esenciales.ipynb** (8 celdas, 493 líneas)
-   - **Álgebra Lineal**: Vectores, matrices, operaciones, aplicaciones en ML
-   - **Cálculo**: Derivadas, derivadas parciales, gradiente, descenso por gradiente
-   - **Probabilidad**: Probabilidad condicional, Teorema de Bayes, variables aleatorias, distribuciones
+2. **02_Matematicas_Esenciales.ipynb** ✅ *Actualizado 2026*
+   - **8 celdas markdown** (formato moderno, con ecuaciones LaTeX)
+   - **Álgebra Lineal**: Vectores, matrices, operaciones, aplicaciones en ML (redes neuronales)
+   - **Cálculo**: Derivadas, derivadas parciales, gradiente, descenso por gradiente, backpropagation
+   - **Probabilidad**: Probabilidad condicional, Teorema de Bayes, variables aleatorias, distribuciones comunes
    - **Estadística Inferencial**: MLE, intervalos de confianza, pruebas de hipótesis, correlación
-   - **Optimización**: Gradient descent, SGD, mini-batch, momentum, Adam
+   - **Optimización**: Gradient Descent, SGD, Mini-Batch GD, Adam, convexidad
    - **Teoría de la Información**: Entropía, cross-entropy, divergencia KL, información mutua
-   - **Conclusiones**: Resumen de fórmulas esenciales
+   - **Conclusiones**: Resumen conceptual y recursos recomendados
 
-3. **03_Preprocesamiento_y_Feature_Engineering.ipynb** (12 celdas, ~600 líneas)
-   - **Limpieza de datos**: Valores faltantes (imputación), duplicados, outliers (IQR, Z-Score, Winsorization)
-   - **Encoding**: Label encoding (ordinales), One-hot encoding (nominales), Target/Frequency encoding
-   - **Scaling**: Standardization (Z-Score), Min-Max Normalization, Robust Scaling
-   - **Feature Engineering**: Features de fecha/tiempo, interacciones, agregaciones, binning, transformaciones matemáticas
-   - **Selección de Features**: Correlación, Feature Importance, RFE, Variance Threshold
-   - **Ejemplos prácticos**: Demostraciones con sklearn y pandas
+3. **03_Preprocesamiento_y_Feature_Engineering.ipynb** ✅ *Actualizado 2026*
+   - **12 celdas** (10 markdown + 2 código Python ejecutable)
+   - **Limpieza de datos**: Valores faltantes (estrategias de imputación), outliers (IQR, Z-Score), duplicados
+   - **Encoding categ��rico**: Label Encoding (ordinales), One-Hot (nominales), Target Encoding (alta cardinalidad)
+   - **Scaling numérico**: StandardScaler (Z-score), MinMaxScaler, RobustScaler
+   - **Feature Engineering**: Interacciones, features de fecha/tiempo, binning, agregaciones
+   - **Selección de Features**: Filter methods, Wrapper methods, Embedded methods, Feature Importance
+   - **Ejemplos ejecutables**: sklearn, pandas con datasets sintéticos realistas
+   - **Mejores prácticas**: Checklist de preprocesamiento, errores comunes
 
-4. **04_Evaluacion_y_Validacion.ipynb** (8 celdas, ~450 líneas)
+4. **04_Evaluacion_y_Validacion.ipynb** ✅ *Actualizado 2026*
+   - **8 celdas** (5 markdown + 3 código Python ejecutable)
    - **Métricas de Clasificación**: Matriz de confusión, Accuracy, Precision, Recall, F1-Score, ROC-AUC
-   - **Métricas de Regresión**: MSE, RMSE, MAE, R²
-   - **Validación Cruzada**: Train/Test Split, K-Fold CV, Stratified K-Fold
-   - **Overfitting y Underfitting**: Síntomas, diagnóstico, soluciones
-   - **Bias-Variance Tradeoff**: Teoría y curvas de aprendizaje
-   - **Ejemplos prácticos**: Clasificación desbalanceada, regresión, diagnóstico de modelos
+   - **Validación Cruzada**: K-Fold CV, Stratified K-Fold, cuándo usar cada uno
+   - **Overfitting y Underfitting**: Síntomas, diagnóstico con curvas, soluciones prácticas
+   - **Bias-Variance Tradeoff**: Teoría y aplicación en problemas reales
+   - **Ejemplos ejecutables**: Clasificación desbalanceada (detección de fraude), diagnóstico de modelos (regresión)
+   - **Mejores prácticas**: Checklist de evaluación, errores comunes, métricas por tipo de problema
 
 ## 🎯 Objetivo
 
