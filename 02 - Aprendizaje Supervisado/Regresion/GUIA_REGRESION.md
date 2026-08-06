@@ -6,7 +6,30 @@ Esta carpeta contiene notebooks **teóricos y prácticos** de **Machine Learning
 
 ### Notebooks:
 
-#### 📖 Teoría
+#### 📚 Guía Completa de Algoritmos
+
+**01_Algoritmos_Regresion_Negocios.ipynb** (11 celdas) - ⭐️ **RECOMENDADO PARA EMPEZAR**
+- **Enfoque**: Aplicaciones empresariales y casos de uso reales
+- **Contenido completo**:
+  1. **Introducción**: Definición formal, casos de uso empresariales por industria
+  2. **Regresión Lineal**: Formulación matemática, ventajas/desventajas, métricas (R², RMSE)
+  3. **Regresión Polinomial**: Transformaciones, selección de grado, ejemplos de negocio
+  4. **Ridge, Lasso, Elastic Net**: Regularización L1/L2, selección de features
+  5. **Árboles de Decisión**: Algoritmo, criterios de división, interpretabilidad
+  6. **Random Forest**: Ensemble, feature importance, casos de uso
+  7. **Gradient Boosting**: XGBoost, LightGBM, CatBoost, hiperparámetros
+  8. **SVR**: Kernel trick, tubo ε-insensitivo, escalamiento obligatorio
+  9. **Redes Neuronales**: Deep Learning, arquitecturas, cuándo usar
+  10. **Comparación**: Tabla comparativa completa, árbol de decisión para selección
+  11. **Conclusiones**: Framework de selección, métricas, próximos pasos
+- **Características únicas**:
+  - Casos de uso por industria (Finanzas, Retail, E-commerce, Real Estate, etc.)
+  - Ejemplos de interpretación para stakeholders
+  - Guía de selección según prioridades de negocio
+  - Comparación de implementaciones (XGBoost vs LightGBM vs CatBoost)
+  - Trade-offs interpretabilidad vs accuracy
+
+#### 📖 Teoría Técnica
 
 **Teoria_Regresion.ipynb** (7 celdas, 336 líneas)
 - **Introducción**: Definición formal, ejemplos de aplicación
@@ -79,23 +102,34 @@ Aprender a construir modelos de regresión que predicen valores **numéricos con
 
 ## 🚀 Orden de Estudio Recomendado
 
-1. **Primero**: Lee `Teoria_Regresion`
-   - Comprende la regresión lineal simple y múltiple
-   - Estudia las fórmulas de mínimos cuadrados
-   - Aprende sobre regularización (Ridge, Lasso)
-   - Revisa métodos no lineales (incluye Random Forest)
+### 🌟 Para Aprender sobre Algoritmos (Principiantes y Avanzados):
 
-2. **Segundo**: Ejecuta `Regresion_Lineal_Multiple`
+1. **PRIMERO**: Lee `01_Algoritmos_Regresion_Negocios` ⭐️
+   - Revisión completa de todos los algoritmos
+   - Enfoque en aplicaciones empresariales reales
+   - Ventajas/desventajas de cada método
+   - Guía de selección según tu problema
+   - **Ideal para**: Entender cuándo usar cada algoritmo
+
+2. **Opcional - Profundización Teórica**: Lee `Teoria_Regresion`
+   - Fórmulas matemáticas detalladas
+   - Demostraciones de mínimos cuadrados
+   - Formulación rigurosa de regularización
+   - **Ideal para**: Comprensión matemática profunda
+
+### 💻 Para Implementar (Práctica):
+
+3. **SEGUNDO**: Ejecuta `Regresion_Lineal_Multiple`
    - Implementa regresión lineal con múltiples variables
    - Observa la interpretabilidad de los coeficientes
    - Evalúa las métricas (RMSE, MAE, R²)
 
-3. **Tercero**: Ejecuta `Arbol_Decision_Regresion`
+4. **TERCERO**: Ejecuta `Arbol_Decision_Regresion`
    - Compara con regresión lineal
    - Observa cómo captura relaciones no lineales
    - Analiza feature importance
 
-4. **Cuarto**: Ejecuta `Random_Forest_Regresion`
+5. **CUARTO**: Ejecuta `Random_Forest_Regresion`
    - Compara los 3 modelos (Linear, Tree, Random Forest)
    - Observa la mejora en R² y reducción de RMSE
    - Analiza feature importance más robusta

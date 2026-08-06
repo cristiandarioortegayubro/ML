@@ -6,7 +6,30 @@ Esta carpeta contiene notebooks **teóricos y prácticos** de **Machine Learning
 
 ### Notebooks:
 
-#### 📖 Teoría
+#### 📚 Guía Completa de Algoritmos
+
+**01_Algoritmos_Clasificacion_Negocios.ipynb** (11 celdas) - ⭐️ **RECOMENDADO PARA EMPEZAR**
+- **Enfoque**: Aplicaciones empresariales y casos de uso reales
+- **Contenido completo**:
+  1. **Introducción**: Definición formal, casos de uso empresariales por industria
+  2. **Regresión Logística**: Formulación matemática, interpretación de probabilidades
+  3. **Árboles de Decisión**: Algoritmo, criterios (Gini/Entropía), interpretabilidad
+  4. **Random Forest**: Ensemble, feature importance, robustez
+  5. **Gradient Boosting**: XGBoost, LightGBM, CatBoost, hiperparámetros
+  6. **Support Vector Machines (SVM)**: Hiperplanos, kernel trick
+  7. **Naive Bayes**: Teorema de Bayes, independencia condicional
+  8. **K-Nearest Neighbors (KNN)**: Distancias, selección de K
+  9. **Redes Neuronales**: Deep Learning, arquitecturas, activaciones
+  10. **Comparación**: Tabla comparativa completa, árbol de decisión para selección
+  11. **Conclusiones**: Framework de selección, métricas, próximos pasos
+- **Características únicas**:
+  - Casos de uso por industria (Fintech, Telecom, Healthcare, E-commerce, etc.)
+  - Ejemplos de interpretación para stakeholders
+  - Guía de selección según prioridades de negocio
+  - Trade-offs interpretabilidad vs accuracy vs velocidad
+  - Métricas empresariales (precision vs recall según costo de errores)
+
+#### 📖 Teoría Técnica
 
 **1. Teoria_Arboles_Decision.ipynb** (7 celdas, 311 líneas)
 - **Estructura de árboles**: Nodos, ramas, hojas, definición formal
@@ -70,22 +93,28 @@ Aprender a construir modelos de clasificación binaria que predicen una **catego
 
 ## 🚀 Orden de Estudio Recomendado
 
-1. **Primero**: Lee `Teoria_Arboles_Decision`
-   - Comprende cómo funcionan los árboles de decisión
-   - Estudia las fórmulas de entropía y Gini
-   - Aprende sobre poda y overfitting
+### 🌟 Para Aprender sobre Algoritmos (Principiantes y Avanzados):
 
-2. **Segundo**: Ejecuta `Arbol_Decision_Clasificacion`
+1. **PRIMERO**: Lee `01_Algoritmos_Clasificacion_Negocios` ⭐️
+   - Revisión completa de todos los algoritmos
+   - Enfoque en aplicaciones empresariales reales
+   - Ventajas/desventajas de cada método
+   - Guía de selección según tu problema
+   - **Ideal para**: Entender cuándo usar cada algoritmo
+
+2. **Opcional - Profundización Teórica**: Lee notebooks teóricos específicos
+   - `Teoria_Arboles_Decision`: Fórmulas de entropía y Gini
+   - `Teoria_Random_Forest`: Ensemble learning y bagging
+   - **Ideal para**: Comprensión matemática profunda
+
+### 💻 Para Implementar (Práctica):
+
+3. **SEGUNDO**: Ejecuta `Arbol_Decision_Clasificacion`
    - Aplica lo aprendido en un problema real
    - Observa cómo se calculan las métricas
    - Experimenta con diferentes hiperparámetros
 
-3. **Tercero**: Lee `Teoria_Random_Forest`
-   - Comprende ensemble learning y bagging
-   - Estudia cómo se combinan múltiples árboles
-   - Aprende sobre feature importance y OOB error
-
-4. **Cuarto**: Ejecuta `Random_Forest_Clasificacion`
+4. **TERCERO**: Ejecuta `Random_Forest_Clasificacion`
    - Compara Random Forest vs Decision Tree
    - Analiza feature importance
    - Observa la mejora en accuracy y robustez

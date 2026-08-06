@@ -20,34 +20,45 @@ Esta carpeta contiene dos tipos principales de problemas supervisados:
 **Objetivo**: Predecir una **categoría** o **clase** discreta.
 
 * **Carpeta**: `Clasificacion/`
+* **Notebook principal**: `01_Algoritmos_Clasificacion_Negocios` - Guía completa de algoritmos con enfoque empresarial
 * **Ejemplos**:
   - Predicción de churn (Sí/No)
   - Detección de fraude (Fraudulento/Legítimo)
   - Clasificación de imágenes (Gato/Perro/Pájaro)
-* **Algoritmos**:
-  - Decision Trees
+* **Algoritmos cubiertos**:
+  - Regresión Logística
+  - Árboles de Decisión
   - Random Forest
-  - Logistic Regression
-  - Gradient Boosting
-  - Support Vector Machines
-  - Neural Networks
+  - Gradient Boosting (XGBoost, LightGBM, CatBoost)
+  - Support Vector Machines (SVM)
+  - Naive Bayes
+  - K-Nearest Neighbors (KNN)
+  - Redes Neuronales
+  - Comparación y selección de algoritmos
 
 ### 2️⃣ Regresión
 
 **Objetivo**: Predecir un **valor numérico continuo**.
 
 * **Carpeta**: `Regresion/`
+* **Notebook principal**: `01_Algoritmos_Regresion_Negocios` - Guía completa de algoritmos con enfoque empresarial
 * **Ejemplos**:
   - Predicción de precios (casas, acciones, productos)
   - Previsión de demanda
   - Estimación de temperatura
   - Predicción de ventas
-* **Algoritmos**:
-  - Linear Regression
-  - Decision Tree Regressor
-  - Random Forest Regressor
-  - Gradient Boosted Trees
-  - Neural Networks
+  - Customer Lifetime Value (CLV)
+  - Revenue Forecasting
+* **Algoritmos cubiertos**:
+  - Regresión Lineal
+  - Regresión Polinomial
+  - Ridge, Lasso, Elastic Net (Regularización)
+  - Árboles de Decisión
+  - Random Forest
+  - Gradient Boosting (XGBoost, LightGBM, CatBoost)
+  - Support Vector Regression (SVR)
+  - Redes Neuronales
+  - Comparación y selección de algoritmos
 
 ## 🔄 Proceso de Aprendizaje Supervisado
 
