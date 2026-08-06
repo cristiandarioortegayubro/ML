@@ -30,6 +30,7 @@ ML/
 │
 ├── Aprendizaje Supervisado/
 │   ├── Clasificacion/
+│   │   ├── 01_Algoritmos_Clasificacion_Negocios.ipynb  [GUIA COMPLETA] ⭐
 │   │   ├── Teoria_Arboles_Decision.ipynb       [TEORIA]
 │   │   ├── Teoria_Random_Forest.ipynb          [TEORIA]
 │   │   ├── Arbol_Decision_Clasificacion.ipynb  [PRACTICA]
@@ -37,11 +38,12 @@ ML/
 │   │   └── GUIA_CLASIFICACION.md
 │   │
 │   ├── Regresion/
+│   │   ├── 01_Algoritmos_Regresion_Negocios.ipynb      [GUIA COMPLETA] ⭐
 │   │   ├── Teoria_Regresion.ipynb              [TEORIA]
 │   │   ├── Regresion_Lineal_Multiple.ipynb     [PRACTICA]
 │   │   ├── Arbol_Decision_Regresion.ipynb      [PRACTICA]
 │   │   ├── Random_Forest_Regresion.ipynb       [PRACTICA]
-│   │   └── README.md
+│   │   └── GUIA_REGRESION.md
 │   │
 │   └── README.md
 │
@@ -72,12 +74,15 @@ ML/
 * **Carpetas**: `Clasificacion/` y `Regresion/`
 * **Datos**: Pares (entrada, salida deseada)
 * **Objetivo**: Predecir etiqueta o valor numérico
+* **✨ NUEVO**: Guías completas de algoritmos con enfoque empresarial:
+  - 📘 `01_Algoritmos_Clasificacion_Negocios` - 11 celdas, todos los algoritmos de clasificación
+  - 📘 `01_Algoritmos_Regresion_Negocios` - 11 celdas, todos los algoritmos de regresión
 * **Ejemplos**:
   - **Clasificación**: Predicción de churn (Sí/No), detección de fraude
-  - **Regresión**: Predicción de precios inmobiliarios, demanda
-* **Algoritmos**: Decision Trees, Random Forest, Linear Regression, Gradient Boosting
+  - **Regresión**: Predicción de precios inmobiliarios, demanda, CLV
+* **Algoritmos cubiertos**: Regresión Logística, Decision Trees, Random Forest, Gradient Boosting (XGBoost/LightGBM/CatBoost), SVM, Naive Bayes, KNN, Redes Neuronales, Ridge/Lasso/Elastic Net, SVR
 
-📊 **Total**: 4 notebooks teóricos + 6 notebooks prácticos
+📊 **Total**: 2 guías completas + 4 notebooks teóricos + 6 notebooks prácticos
 
 ---
 
@@ -157,6 +162,15 @@ Base matemática y metodológica esencial antes de algoritmos específicos. Todo
 
 #### Clasificación
 
+**01_Algoritmos_Clasificacion_Negocios.ipynb** (11 celdas) ⭐ **RECOMENDADO**
+- Guía completa con enfoque empresarial de TODOS los algoritmos:
+  - Regresión Logística, Árboles de Decisión, Random Forest
+  - Gradient Boosting (XGBoost, LightGBM, CatBoost)
+  - SVM, Naive Bayes, KNN, Redes Neuronales
+  - Comparación completa y guía de selección
+- Casos de uso por industria (Fintech, Telecom, Healthcare, etc.)
+- Trade-offs interpretabilidad vs accuracy vs velocidad
+
 **Teoria_Arboles_Decision.ipynb** (7 celdas, 311 líneas)
 - Algoritmo ID3, entropía, Gini
 - Poda, overfitting
@@ -166,6 +180,16 @@ Base matemática y metodológica esencial antes de algoritmos específicos. Todo
 - Feature importance, OOB error
 
 #### Regresión
+
+**01_Algoritmos_Regresion_Negocios.ipynb** (11 celdas) ⭐ **RECOMENDADO**
+- Guía completa con enfoque empresarial de TODOS los algoritmos:
+  - Regresión Lineal, Polinomial, Ridge/Lasso/Elastic Net
+  - Árboles de Decisión, Random Forest
+  - Gradient Boosting (XGBoost, LightGBM, CatBoost)
+  - Support Vector Regression (SVR), Redes Neuronales
+  - Comparación completa y guía de selección
+- Casos de uso por industria (Finanzas, Real Estate, E-commerce, etc.)
+- Framework de selección según prioridades de negocio
 
 **Teoria_Regresion.ipynb** (7 celdas, 336 líneas)
 - Regresión lineal (simple, múltiple)
@@ -192,13 +216,15 @@ Base matemática y metodológica esencial antes de algoritmos específicos. Todo
 ## 💻 Notebooks Prácticos (Resumen)
 
 ### Clasificación
-1. **Arbol_Decision_Clasificacion**: Churn prediction (Decision Tree)
-2. **Random_Forest_Clasificacion**: Churn prediction (Random Forest, mejora vs DT)
+1. **01_Algoritmos_Clasificacion_Negocios**: Guía completa de todos los algoritmos (Teoría + Casos empresariales) ⭐
+2. **Arbol_Decision_Clasificacion**: Churn prediction (Decision Tree)
+3. **Random_Forest_Clasificacion**: Churn prediction (Random Forest, mejora vs DT)
 
 ### Regresión
-1. **Regresion_Lineal_Multiple**: Precios inmobiliarios (Linear)
-2. **Arbol_Decision_Regresion**: Precios inmobiliarios (Tree)
-3. **Random_Forest_Regresion**: Precios inmobiliarios (Random Forest, mejor R²)
+1. **01_Algoritmos_Regresion_Negocios**: Guía completa de todos los algoritmos (Teoría + Casos empresariales) ⭐
+2. **Regresion_Lineal_Multiple**: Precios inmobiliarios (Linear)
+3. **Arbol_Decision_Regresion**: Precios inmobiliarios (Tree)
+4. **Random_Forest_Regresion**: Precios inmobiliarios (Random Forest, mejor R²)
 
 ### Clustering
 1. **KMeans_Clustering**: Segmentación de clientes
@@ -219,13 +245,15 @@ Base matemática y metodológica esencial antes de algoritmos específicos. Todo
 
 2. Aprendizaje Supervisado/
    ├── Clasificacion/
-   │   ├── Teoria_Arboles_Decision           [1 hora]
+   │   ├── 01_Algoritmos_Clasificacion_Negocios  [2-3 horas] ⭐ EMPEZAR AQUÍ
+   │   ├── Teoria_Arboles_Decision           [1 hora] (opcional)
    │   ├── Arbol_Decision_Clasificacion      [30 min]
-   │   ├── Teoria_Random_Forest              [1 hora]
+   │   ├── Teoria_Random_Forest              [1 hora] (opcional)
    │   └── Random_Forest_Clasificacion       [30 min]
    │
    └── Regresion/
-       ├── Teoria_Regresion                  [1 hora]
+       ├── 01_Algoritmos_Regresion_Negocios  [2-3 horas] ⭐ EMPEZAR AQUÍ
+       ├── Teoria_Regresion                  [1 hora] (opcional)
        ├── Regresion_Lineal_Multiple         [30 min]
        ├── Arbol_Decision_Regresion          [30 min]
        └── Random_Forest_Regresion           [30 min]
@@ -308,21 +336,22 @@ Aprende a usar **Databricks AutoML** para generar modelos automáticamente e imp
 
 | Categoría | Cantidad | Estado |
 |-----------|----------|--------|
+| **Guías completas** | 2 | 1 Clasificación + 1 Regresión (enfoque empresarial) ⭐ |
 | **Notebooks teóricos** | 15 | 4 Fundamentos + 4 Supervisado + 1 No Supervisado + 1 Refuerzo + 1 AutoML |
 | **Notebooks prácticos** | 11 | 6 Supervisado + 1 No Supervisado + 1 Refuerzo + 4 AutoML/MLOps |
-| **Total notebooks** | 26 | **Todos con formato moderno (2026)** |
+| **Total notebooks** | 28 | **Todos con formato moderno (2026)** |
 | **README files** | 10 | Principal + Fundamentos + Supervisado + AutoML + Otros |
 | **Guías** | 2 | README.md + GUIA_INICIO_RAPIDO.md |
 
 ### Distribución por Paradigma
 
-| Paradigma | Teoría | Práctica | Total |
-|-----------|--------|----------|-------|
-| **Fundamentos** | 4 | 0 | 4 |
-| **Supervisado** | 4 | 6 | 10 |
-| **No Supervisado** | 1 | 1 | 2 |
-| **Por Refuerzo** | 1 | 1 | 2 |
-| **AutoML/MLOps** | 1 | 4 | 5 |
+| Paradigma | Guías | Teoría | Práctica | Total |
+|-----------|-------|--------|----------|-------|
+| **Fundamentos** | 0 | 4 | 0 | 4 |
+| **Supervisado** | 2 ⭐ | 4 | 6 | 12 |
+| **No Supervisado** | 0 | 1 | 1 | 2 |
+| **Por Refuerzo** | 0 | 1 | 1 | 2 |
+| **AutoML/MLOps** | 0 | 1 | 4 | 5 |
 
 ---
 
